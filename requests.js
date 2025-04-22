@@ -1,8 +1,7 @@
-//importts
+//imports
 require('dotenv').config();
 const axios = require('axios');
 
-// Credentials
 const API_KEY = process.env.API_KEY;
 const API_SECRET = process.env.API_SECRET;
 const credentials = Buffer.from(`${API_KEY}:${API_SECRET}`).toString('base64');
@@ -25,7 +24,6 @@ const requestBody = {
     "address_postal_code": "10001",
     "address_country_code": "US"
   }; 
-
 
 // Post evaluation
   async function postAlloy(data) {
