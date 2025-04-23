@@ -54,7 +54,7 @@ function processResponse(data) {
   case 'Manual Review':
     console.log('Your application is under review. Please wait for further updates.');
     break;
-  case 'Deny':
+  case 'Denied':
     console.log('Unfortunately, we cannot approve your application at this time.');
     break;
   default:
